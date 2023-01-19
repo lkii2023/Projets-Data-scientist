@@ -40,13 +40,32 @@ sorted_handles = handles.first(20).sort_by {|handle| handle.gsub('@','')}
 
 puts "\n" 
 
-puts "Trie la liste de handle par ordre alphabétique."
-puts "Sorted handles: #{sorted_handles}"
+sorted_handles = handles.sort.first(50).map { |handle| handle.delete("@") }
 
-sorted_handles = handles.first(20).dup.sort
-sorted_handles = gets.chomp
-puts "Sorted handles: #{sorted_handles}"
+# columns count
+columns = 3
 
+# calculate the number of rows
+rows = (sorted_handles.count + columns - 1) / columns
+
+puts "Trie la liste de handle par ordre alphabétique (les 50 premiers):"
+# loop through the rows
+rows.times do |row|
+    # loop through the columns
+    columns.times do |col|
+        # calculate the index of the handle
+        index = row + (col * rows)
+        # if the index is less than the number of handles
+        if index < sorted_handles.count
+            print sorted_handles[index].ljust(25)
+        end
+    end
+    puts
+end
+
+
+
+puts "\n" 
 
 puts "Trie la liste de handle par taille des handle (les 20 premiers) (les plus petits en premiers, les plus grands après)"
 
