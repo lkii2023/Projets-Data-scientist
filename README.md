@@ -33,6 +33,7 @@ Vous venez de signer un contrat pour Carrefour.io et vous allez devoir analyser 
 
 
 deuxieme exercice
+
 Associer deux arrays pour obtenir un hash.
 Une fois cette association réalisée, coder un programme Ruby pour donner :
 
