@@ -22,6 +22,8 @@ premier exercice de programmation
 - Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3      caractères, etc)
 
 
+
+
 2 cryptocurrencies
 
 Après le succès de votre firme, vous vous êtes dits que vous pourriez mélanger deux fois plus de buzzwords 
